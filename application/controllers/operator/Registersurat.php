@@ -202,7 +202,7 @@ class Registersurat extends CI_Controller{
       );
 
       $this->registersuratmodel->simpantujuansurat($insert);
-      $from_email = "encikassik@gmail.com";
+      $from_email = "youremail@gmail.com";
       $idsm = $this->input->post('idrsm');
       $idtujuan = $this->input->post('tujuansurat');
       $emailtujuan = $this->registersuratmodel->getemail($idsm, $idtujuan);
@@ -215,7 +215,7 @@ class Registersurat extends CI_Controller{
                 'smtp_host' => 'ssl://smtp.googlemail.com',
                 'smtp_port' => 465,
                 'smtp_user' => $from_email,
-                'smtp_pass' => 'nevergiveup123',
+                'smtp_pass' => 'yourpassword',
                 'mailtype'  => 'html',
                 'charset'   => 'iso-8859-1'
         );
